@@ -42,6 +42,10 @@ Schets eerst. Bijvoorbeeld een wireflow en/of breakdown-schets met hoe de demo m
 - Kijk voor de usable laag naar gebruiksvriendelijkheid en design patterns die je zou kunnen toepassen
 - De meest 'enhanced' versie is super vet, gaaf en prettig om te gebruiken … Dit is de pleasurable laag.
 
+### Browsers
+
+
+
 ### Bronnen
 
 Hier staat een lijst [Browser Technolgies](https://platform.html5.org/) die je kan toepassen. Bekijk welke nieuwe, innovatieve, interessante techniek je kan gebruiken voor je ontwerp. Of kijk de [WEB API](https://developer.mozilla.org/en-US/docs/Web/API) lijst op MDN, daar zitten echt coole API's tussen die misschien leuk zijn voor je pleasurable layer. Bluetooth api, gamepad API(voor controllers!)
@@ -71,16 +75,16 @@ De features waarop je moet testen komen uit [opdracht 2 - Breek het Web](https:/
 
 Er is een Readme toegevoegd met daarin:
 - [ ] Een link naar de demo.
-- [ ] Een (wireflow) schets van de functionaliteit met een beschrijving van de core functionality. Geef ook aan wat de functional/reliable, usable en pleasurable laag.
 - [ ] Een beschrijving van de feature(s)/Browser Technologies die in je demo zijn gebruikt en hoe je dit PE hebt toegepast
-- [ ] Een lijst met vier browsers waarin je hebt getest:
-	- voor de desktop 1 Chromium 1 niet-Chromium browser
-	- voor mobiel 1 iOS + 1 Android OF een Samsung- en een niet-Samsung Android)
+- [ ] Een lijst met browsers waarin je hebt getest:
+	- voor de desktop: 1 Chromium, Firefox en Safari
+	- voor mobiel: Safari iOS + Android: Samsung Internet of Chrome
+	- 1 obscure browser naar keuze: Lynx, Flow, PrinceXML of KaiOS
 - [ ]  een testverslag met
 	- een beschrijving van de feature-lijst die zijn onderzocht
 	- welke browsers de feature(s) wel/niet ondersteunen
 	- welke functionaliteiten zoals JavaScript je aan en uit hebt gezet in de tests
-	- <del>een screenreader test</del> (dit gaan we bij het volgende vak Human Centred Design doen)
+	- een screenreader test op de default screenreader van je laptop en/of telefoon.
 
 
 
