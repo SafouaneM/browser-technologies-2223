@@ -79,7 +79,7 @@ Er is een Readme toegevoegd met daarin:
 - [ ] Een lijst met browsers waarin je hebt getest:
 	- voor de desktop: 1 Chromium, Firefox en Safari
 	- voor mobiel: Safari iOS + Android: Samsung Internet of Chrome
-	- 1 obscure browser naar keuze: Lynx, Flow, PrinceXML of KaiOS
+	- 1 obscure browser naar keuze: Lynx, Flow ([Flow voor Mac](https://flounder.ekioh.com/~piers/ekioh_6.9.0_mac-flow_20230307_r38512.zip) en [Flow voor Linux](https://flounder.ekioh.com/~piers/ekioh_6.9.0_x11-64-flow_20230307_r38512.zip)), PrinceXML of KaiOS 
 - [ ]  een testverslag met
 	- een beschrijving van de feature-lijst die zijn onderzocht
 	- welke browsers de feature(s) wel/niet ondersteunen
