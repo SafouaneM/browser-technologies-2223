@@ -133,6 +133,8 @@ Mobile: Safari IOS
 ![IMG_9720](https://user-images.githubusercontent.com/31611670/230268892-05551c17-e2f5-4ee6-a2fd-a9e0abad4f4a.PNG)
  
 Hetzelfde geld voor ios localstorage werkt wat ik niet had verwacht bij safari op een iphone maar toch wel, maar hier slaan ze ook mijn mooie comic sans font over heel opmerkelijk.
+
+En de knoppen zien er een beetje raar uit, hoewel het de enquete wat leuker maakt omdat je nooit normaal op zo'n design zou komen.
  
 Validation ✔️
 Knoppen validatie ✔️
