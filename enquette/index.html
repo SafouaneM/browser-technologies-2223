@@ -9,441 +9,621 @@
     <title>Document</title>
 </head>
 <body>
-
+<header>
+    <button onclick="document.body.classList.toggle('dark-mode')">Toggle dark mode</button>
+</header>
 <form action="">
+    <div class="survey-progress-container">
+        <div class="survey-progress-bar"></div>
+    </div>
+    <div class="survey-progress-text"></div>
     <h1>Enquete voor de Minor Web Development</h1>
     <fieldset id="personal-info">
         <legend>Persoonlijke gegevens</legend>
         <label>
-            Voornaam
-            <input name="voornaam" required>
+            <span> Beste student zoals je hier voor je ziet is dit een enquete, hoewel er geen ipad te winnen valt kan je wel
+        hopelijk jou mening delen over de minor tot nu toe.
+        We hebben besloten om het font Comic-Sans te gebruiken zodat je zo snel mogelijk hier weer weg wilt zijn,
+        gelieve alles naar waarheid invullen. Indien je anoniem je enquete wilt invullen is dat ook mogelijk.
+    </span>
         </label>
         <label>
-            Achternaam
-            <input name="achternaam" required>
+            <span>Voornaam</span>
+            <input name="voornaam" >
         </label>
         <label>
-            Email
-            <input type="email" required>
+            <span>Achternaam</span>
+            <input name="achternaam" >
         </label>
         <label>
-            Studentnummer
-            <input name="studentennummer" type="text" pattern="s\d{7}" required>
+            <span>Email</span>
+            <input type="email" >
+        </label>
+        <label>
+            <span>Studentnummer</span>
+            <input name="studentennummer" type="text" pattern="s\d{7}" >
         </label>
     </fieldset>
 
     <fieldset id="project-week-1">
         <legend>Project week 1</legend>
         <h2>Docenten die horen bij dit vak</h2>
-        <label>
-            <input type="checkbox" name="joost" value="" required>
-            Joost Faber
-        </label>
-        <label>
-            <input type="checkbox" name="robert" value="">
-            Robert Spier
-        </label>
-        <label>
-            <input type="checkbox" name="suss" value="">
-            Suus ten Voorde
-        </label>
-        <label>
-            <input type="checkbox" name="declan" value="">
-            Declan Rek
-        </label>
-        <label>
-            <input type="checkbox" name="justus" value="">
-            Justus Sturkenboom
-        </label>
-        <label>
-            <input type="checkbox" name="guido" value="">
-            Guido Bouwman
-        </label>
-        <label>
-            <input type="checkbox" name="vasilis" value="">
-            Vasilis van Gemert
-        </label>
-        <label>
-            <input type="checkbox" name="sanne" value="">
-            Sanne ’t Hooft
-        </label>
-        <label>
-            <input type="checkbox" name="koop" value="">
-            Koop Reynders
-        </label>
-        <label>
-            <input type="checkbox" name="peter" value="">
-            Peter Paul Koch
-        </label>
+        <div >
+            <label>
+                <input type="checkbox" name="joost" value="" checked required>
+                Joost Faber
+            </label>
+            <label>
+                <input type="checkbox" name="robert" value="" checked required>
+                Robert Spier
+            </label>
+            <label>
+                <input type="checkbox" name="vasilis" value="" checked required>
+                Vasilis van Gemert
+            </label>
+        </div>
         <br>
         <div class="survey-answer">
             <p>Op een schaal van 1 tot 10, wat vond je van de lesstof?</p>
             <div class="survey-rating">
                 <input type="radio" id="rating1" name="rating1" value="1" required/>
                 <label for="rating1">1</label>
-                <input type="radio" id="rating2" name="rating1" value="2" />
+                <input type="radio" id="rating2" name="rating1" value="2"/>
                 <label for="rating2">2</label>
-                <input type="radio" id="rating3" name="rating1" value="3" />
+                <input type="radio" id="rating3" name="rating1" value="3"/>
                 <label for="rating3">3</label>
-                <input type="radio" id="rating4" name="rating1" value="4" />
+                <input type="radio" id="rating4" name="rating1" value="4"/>
                 <label for="rating4">4</label>
-                <input type="radio" id="rating5" name="rating1" value="5" />
+                <input type="radio" id="rating5" name="rating1" value="5"/>
                 <label for="rating5">5</label>
-                <input type="radio" id="rating6" name="rating1" value="6" />
+                <input type="radio" id="rating6" name="rating1" value="6"/>
                 <label for="rating6">6</label>
-                <input type="radio" id="rating7" name="rating1" value="7" />
+                <input type="radio" id="rating7" name="rating1" value="7"/>
                 <label for="rating7">7</label>
-                <input type="radio" id="rating8" name="rating1" value="8" />
+                <input type="radio" id="rating8" name="rating1" value="8"/>
                 <label for="rating8">8</label>
-                <input type="radio" id="rating9" name="rating1" value="9" />
+                <input type="radio" id="rating9" name="rating1" value="9"/>
                 <label for="rating9">9</label>
-                <input type="radio" id="rating10" name="rating1" value="10" />
+                <input type="radio" id="rating10" name="rating1" value="10"/>
                 <label for="rating10">10</label>
             </div>
         </div>
 
-                <div class="survey-answer">
-                    <p>Op een schaal van 1 tot 10, hoe gemakklijk kon je de les volgen?</p>
-                    <div class="survey-rating">
-                        <input type="radio" id="rating11" name="rating2" value="1" required/>
-                        <label for="rating11">1</label>
-                        <input type="radio" id="rating12" name="rating2" value="2" />
-                        <label for="rating12">2</label>
-                        <input type="radio" id="rating13" name="rating2" value="3" />
-                        <label for="rating13">3</label>
-                        <input type="radio" id="rating14" name="rating2" value="4" />
-                        <label for="rating14">4</label>
-                        <input type="radio" id="rating15" name="rating2" value="5" />
-                        <label for="rating15">5</label>
-                        <input type="radio" id="rating16" name="rating2" value="6" />
-                        <label for="rating16">6</label>
-                        <input type="radio" id="rating17" name="rating2" value="7" />
-                        <label for="rating17">7</label>
-                        <input type="radio" id="rating18" name="rating2" value="8" />
-                        <label for="rating18">8</label>
-                        <input type="radio" id="rating19" name="rating2" value="9" />
-                        <label for="rating19">9</label>
-                        <input type="radio" id="rating20" name="rating2" value="10" />
-                        <label for="rating20">10</label>
-                    </div>
-                </div>
-
-                <div class="survey-answer">
-                    <p>Op een schaal van 1 tot 10, hoeveel heb je kunnen begrijpen van de les?</p>
-                    <div class="survey-rating">
-                        <input type="radio" id="rating21" name="rating3" value="1" required/>
-                        <label for="rating21">1</label>
-                        <input type="radio" id="rating22" name="rating3" value="2" />
-                        <label for="rating22">2</label>
-                        <input type="radio" id="rating23" name="rating3" value="3" />
-                        <label for="rating23">3</label>
-                        <input type="radio" id="rating24" name="rating3" value="4" />
-                        <label for="rating24">4</label>
-                        <input type="radio" id="rating25" name="rating3" value="5" />
-                        <label for="rating25">5</label>
-                        <input type="radio" id="rating26" name="rating3" value="6" />
-                        <label for="rating26">6</label>
-                        <input type="radio" id="rating27" name="rating3" value="7" />
-                        <label for="rating27">7</label>
-                        <input type="radio" id="rating28" name="rating3" value="8" />
-                        <label for="rating28">8</label>
-                        <input type="radio" id="rating29" name="rating3" value="9" />
-                        <label for="rating29">9</label>
-                        <input type="radio" id="rating30" name="rating3" value="10" />
-                        <label for="rating30">10</label>
-                    </div>
-                </div>
-
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoe gemakklijk kon je de les volgen?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating11" name="rating2" value="1" required/>
+                <label for="rating11">1</label>
+                <input type="radio" id="rating12" name="rating2" value="2"/>
+                <label for="rating12">2</label>
+                <input type="radio" id="rating13" name="rating2" value="3"/>
+                <label for="rating13">3</label>
+                <input type="radio" id="rating14" name="rating2" value="4"/>
+                <label for="rating14">4</label>
+                <input type="radio" id="rating15" name="rating2" value="5"/>
+                <label for="rating15">5</label>
+                <input type="radio" id="rating16" name="rating2" value="6"/>
+                <label for="rating16">6</label>
+                <input type="radio" id="rating17" name="rating2" value="7"/>
+                <label for="rating17">7</label>
+                <input type="radio" id="rating18" name="rating2" value="8"/>
+                <label for="rating18">8</label>
+                <input type="radio" id="rating19" name="rating2" value="9"/>
+                <label for="rating19">9</label>
+                <input type="radio" id="rating20" name="rating2" value="10"/>
+                <label for="rating20">10</label>
             </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoeveel heb je kunnen begrijpen van de les?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating21" name="rating3" value="1" required/>
+                <label for="rating21">1</label>
+                <input type="radio" id="rating22" name="rating3" value="2"/>
+                <label for="rating22">2</label>
+                <input type="radio" id="rating23" name="rating3" value="3"/>
+                <label for="rating23">3</label>
+                <input type="radio" id="rating24" name="rating3" value="4"/>
+                <label for="rating24">4</label>
+                <input type="radio" id="rating25" name="rating3" value="5"/>
+                <label for="rating25">5</label>
+                <input type="radio" id="rating26" name="rating3" value="6"/>
+                <label for="rating26">6</label>
+                <input type="radio" id="rating27" name="rating3" value="7"/>
+                <label for="rating27">7</label>
+                <input type="radio" id="rating28" name="rating3" value="8"/>
+                <label for="rating28">8</label>
+                <input type="radio" id="rating29" name="rating3" value="9"/>
+                <label for="rating29">9</label>
+                <input type="radio" id="rating30" name="rating3" value="10"/>
+                <label for="rating30">10</label>
+            </div>
+        </div>
+
         <hr>
     </fieldset>
     <fieldset id="web-app">
         <legend>Web app from scratch</legend>
         <h2>Docenten die horen bij dit vak</h2>
-        <label>
-            <input type="checkbox" name="joost" value="">
-            Joost Faber
-        </label>
-        <label>
-            <input type="checkbox" name="robert" value="">
-            Robert Spier
-        </label>
-        <label>
-            <input type="checkbox" name="suss" value="">
-            Suus ten Voorde
-        </label>
-        <label>
-            <input type="checkbox" name="declan" value="">
-            Declan Rek
-        </label>
-        <label>
-            <input type="checkbox" name="justus" value="">
-            Justus Sturkenboom
-        </label>
-        <label>
-            <input type="checkbox" name="guido" value="">
-            Guido Bouwman
-        </label>
-        <label>
-            <input type="checkbox" name="vasilis" value="">
-            Vasilis van Gemert
-        </label>
-        <label>
-            <input type="checkbox" name="sanne" value="">
-            Sanne ’t Hooft
-        </label>
-        <label>
-            <input type="checkbox" name="koop" value="">
-            Koop Reynders
-        </label>
-        <label>
-            <input type="checkbox" name="peter" value="">
-            Peter Paul Koch
-        </label>
-        <br>
-        <label>
-            Welke graad geef je dit vak en de vakdocent
-            <select name="position">
-                <option value="" selected></option>
-                <option value="onvoldoende">Onvoldoende</option>
-                <option value="voldoende">Voldoende</option>
-                <option value="ruimvoldoende">Ruim voldoende</option>
-            </select>
-        </label>
+        <div >
+            <label>
+                <input type="checkbox" name="joost" value="" checked required>
+                Joost Faber
+            </label>
+            <label>
+                <input type="checkbox" name="robert" value="" checked required>
+                Robert Spier
+            </label>
+        </div>
+            <br>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, wat vond je van de lesstof?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating31" name="rating4" value="1" required/>
+                <label for="rating31">1</label>
+                <input type="radio" id="rating32" name="rating4" value="2"/>
+                <label for="rating32">2</label>
+                <input type="radio" id="rating33" name="rating4" value="3"/>
+                <label for="rating33">3</label>
+                <input type="radio" id="rating34" name="rating4" value="4"/>
+                <label for="rating34">4</label>
+                <input type="radio" id="rating35" name="rating4" value="5"/>
+                <label for="rating35">5</label>
+                <input type="radio" id="rating36" name="5ating4" value="6"/>
+                <label for="rating36">6</label>
+                <input type="radio" id="rating37" name="rating4" value="7"/>
+                <label for="rating37">7</label>
+                <input type="radio" id="rating38" name="rating4" value="8"/>
+                <label for="rating38">8</label>
+                <input type="radio" id="rating39" name="rating4" value="9"/>
+                <label for="rating39">9</label>
+                <input type="radio" id="rating40" name="rating4" value="10"/>
+                <label for="rating40">10</label>
+            </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoe gemakklijk kon je de les volgen?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating41" name="rating5" value="1" required/>
+                <label for="rating41">1</label>
+                <input type="radio" id="rating42" name="rating5" value="2"/>
+                <label for="rating42">2</label>
+                <input type="radio" id="rating43" name="rating5" value="3"/>
+                <label for="rating43">3</label>
+                <input type="radio" id="rating44" name="rating5" value="4"/>
+                <label for="rating44">4</label>
+                <input type="radio" id="rating45" name="rating5" value="5"/>
+                <label for="rating45">5</label>
+                <input type="radio" id="rating46" name="rating5" value="6"/>
+                <label for="rating46">6</label>
+                <input type="radio" id="rating47" name="rating5" value="7"/>
+                <label for="rating47">7</label>
+                <input type="radio" id="rating48" name="rating5" value="8"/>
+                <label for="rating48">8</label>
+                <input type="radio" id="rating49" name="rating5" value="9"/>
+                <label for="rating49">9</label>
+                <input type="radio" id="rating50" name="rating5" value="10"/>
+                <label for="rating50">10</label>
+            </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoeveel heb je kunnen begrijpen van de les?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating51" name="rating6" value="1" required/>
+                <label for="rating51">1</label>
+                <input type="radio" id="rating52" name="rating6" value="2"/>
+                <label for="rating52">2</label>
+                <input type="radio" id="rating53" name="rating6" value="3"/>
+                <label for="rating53">3</label>
+                <input type="radio" id="rating54" name="rating6" value="4"/>
+                <label for="rating54">4</label>
+                <input type="radio" id="rating55" name="rating6" value="5"/>
+                <label for="rating55">5</label>
+                <input type="radio" id="rating56" name="rating6" value="6"/>
+                <label for="rating56">6</label>
+                <input type="radio" id="rating57" name="rating6" value="7"/>
+                <label for="rating57">7</label>
+                <input type="radio" id="rating58" name="rating6" value="8"/>
+                <label for="rating58">8</label>
+                <input type="radio" id="rating59" name="rating6" value="9"/>
+                <label for="rating59">9</label>
+                <input type="radio" id="rating60" name="rating6" value="10"/>
+                <label for="rating60">10</label>
+            </div>
+        </div>
+
+        <hr>
         <hr>
     </fieldset>
     <fieldset id="css-to-the-rescue">
         <legend>Css to the rescue</legend>
         <h2>Docenten die horen bij dit vak</h2>
         <label>
-            <input type="checkbox" name="joost" value="">
-            Joost Faber
-        </label>
-        <label>
-            <input type="checkbox" name="robert" value="">
-            Robert Spier
-        </label>
-        <label>
-            <input type="checkbox" name="suss" value="">
-            Suus ten Voorde
-        </label>
-        <label>
-            <input type="checkbox" name="declan" value="">
-            Declan Rek
-        </label>
-        <label>
-            <input type="checkbox" name="justus" value="">
-            Justus Sturkenboom
-        </label>
-        <label>
-            <input type="checkbox" name="guido" value="">
-            Guido Bouwman
-        </label>
-        <label>
-            <input type="checkbox" name="vasilis" value="">
+            <input type="checkbox" name="vasilis" value="" checked>
             Vasilis van Gemert
         </label>
         <label>
-            <input type="checkbox" name="sanne" value="">
+            <input type="checkbox" name="sanne" value="" checked>
             Sanne ’t Hooft
         </label>
-        <label>
-            <input type="checkbox" name="koop" value="">
-            Koop Reynders
-        </label>
-        <label>
-            <input type="checkbox" name="peter" value="">
-            Peter Paul Koch
-        </label>
         <br>
-        <label>
-            Welke graad geef je dit vak en de vakdocent
-            <select name="position">
-                <option value="" selected></option>
-                <option value="onvoldoende">Onvoldoende</option>
-                <option value="voldoende">Voldoende</option>
-                <option value="ruimvoldoende">Ruim voldoende</option>
-            </select>
-        </label>
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, wat vond je van de lesstof?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating61" name="rating7" value="1" required/>
+                <label for="rating61">1</label>
+                <input type="radio" id="rating62" name="rating7" value="2"/>
+                <label for="rating62">2</label>
+                <input type="radio" id="rating63" name="rating7" value="3"/>
+                <label for="rating63">3</label>
+                <input type="radio" id="rating64" name="rating7" value="4"/>
+                <label for="rating64">4</label>
+                <input type="radio" id="rating65" name="rating7" value="5"/>
+                <label for="rating65">5</label>
+                <input type="radio" id="rating66" name="rating7" value="6"/>
+                <label for="rating66">6</label>
+                <input type="radio" id="rating67" name="rating7" value="7"/>
+                <label for="rating67">7</label>
+                <input type="radio" id="rating68" name="rating7" value="8"/>
+                <label for="rating68">8</label>
+                <input type="radio" id="rating69" name="rating7" value="9"/>
+                <label for="rating69">9</label>
+                <input type="radio" id="rating70" name="rating7" value="10"/>
+            </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoe gemakklijk kon je de les volgen?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating71" name="rating8" value="1" required/>
+                <label for="rating71">1</label>
+                <input type="radio" id="rating72" name="rating8" value="2"/>
+                <label for="rating72">2</label>
+                <input type="radio" id="rating73" name="rating8" value="3"/>
+                <label for="rating73">3</label>
+                <input type="radio" id="rating74" name="rating8" value="4"/>
+                <label for="rating74">4</label>
+                <input type="radio" id="rating75" name="rating8" value="5"/>
+                <label for="rating75">5</label>
+                <input type="radio" id="rating76" name="rating8" value="6"/>
+                <label for="rating76">6</label>
+                <input type="radio" id="rating77" name="rating8" value="7"/>
+                <label for="rating77">7</label>
+                <input type="radio" id="rating78" name="rating8" value="8"/>
+                <label for="rating78">8</label>
+                <input type="radio" id="rating79" name="rating8" value="9"/>
+                <label for="rating79">9</label>
+                <input type="radio" id="rating80" name="rating8" value="10"/>
+                <label for="rating80">10</label>
+            </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoeveel heb je kunnen begrijpen van de les?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating81" name="rating9" value="1" required/>
+                <label for="rating81">11</label>
+                <input type="radio" id="rating82" name="rating9" value="2"/>
+                <label for="rating82">12</label>
+                <input type="radio" id="rating83" name="rating9" value="3"/>
+                <label for="rating83">13</label>
+                <input type="radio" id="rating84" name="rating9" value="4"/>
+                <label for="rating84">14</label>
+                <input type="radio" id="rating85" name="rating9" value="5"/>
+                <label for="rating85">15</label>
+                <input type="radio" id="rating86" name="rating9" value="6"/>
+                <label for="rating86">16</label>
+                <input type="radio" id="rating87" name="rating9" value="7"/>
+                <label for="rating87">17</label>
+                <input type="radio" id="rating88" name="rating9" value="8"/>
+                <label for="rating88">18</label>
+                <input type="radio" id="rating89" name="rating9" value="9"/>
+                <label for="rating89">19</label>
+                <input type="radio" id="rating90" name="rating9" value="10"/>
+                <label for="rating90">20</label>
+            </div>
+        </div>
+
+        <hr>
         <hr>
     </fieldset>
     <fieldset id="project-week-2">
         <legend>Project week 2</legend>
         <h2>Docenten die horen bij dit vak</h2>
-        <label>
-            <input type="checkbox" name="joost" value="">
-            Joost Faber
-        </label>
-        <label>
-            <input type="checkbox" name="robert" value="">
-            Robert Spier
-        </label>
-        <label>
-            <input type="checkbox" name="suss" value="">
-            Suus ten Voorde
-        </label>
-        <label>
-            <input type="checkbox" name="declan" value="">
-            Declan Rek
-        </label>
-        <label>
-            <input type="checkbox" name="justus" value="">
-            Justus Sturkenboom
-        </label>
-        <label>
-            <input type="checkbox" name="guido" value="">
-            Guido Bouwman
-        </label>
-        <label>
-            <input type="checkbox" name="vasilis" value="">
-            Vasilis van Gemert
-        </label>
-        <label>
-            <input type="checkbox" name="sanne" value="">
-            Sanne ’t Hooft
-        </label>
-        <label>
-            <input type="checkbox" name="koop" value="">
-            Koop Reynders
-        </label>
-        <label>
-            <input type="checkbox" name="peter" value="">
-            Peter Paul Koch
-        </label>
+        <div>
+            <label>
+                <input type="checkbox" name="robert" value="" checked required>
+                Robert Spier
+            </label>
+            <label>
+                <input type="checkbox" name="vasilis" value="" checked required>
+                Vasilis van Gemert
+            </label>
+        </div>
         <br>
-        <label>
-            Welke graad geef je dit vak en de vakdocent
-            <select name="position">
-                <option value="" selected></option>
-                <option value="onvoldoende">Onvoldoende</option>
-                <option value="voldoende">Voldoende</option>
-                <option value="ruimvoldoende">Ruim voldoende</option>
-            </select>
-        </label>
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, wat vond je van de lesstof?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating91" name="rating10" value="1" required/>
+                <label for="rating91">1</label>
+                <input type="radio" id="rating92" name="rating10" value="2"/>
+                <label for="rating92">2</label>
+                <input type="radio" id="rating93" name="rating10" value="3"/>
+                <label for="rating93">3</label>
+                <input type="radio" id="rating94" name="rating10" value="4"/>
+                <label for="rating94">4</label>
+                <input type="radio" id="rating95" name="rating10" value="5"/>
+                <label for="rating95">5</label>
+                <input type="radio" id="rating96" name="rating10" value="6"/>
+                <label for="rating96">6</label>
+                <input type="radio" id="rating97" name="rating10" value="7"/>
+                <label for="rating97">7</label>
+                <input type="radio" id="rating98" name="rating10" value="8"/>
+                <label for="rating98">8</label>
+                <input type="radio" id="rating99" name="rating10" value="9"/>
+                <label for="rating99">9</label>
+                <input type="radio" id="rating100" name="rating10" value="10"/>
+                <label for="rating100">10</label>
+            </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoe gemakklijk kon je de les volgen?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating101" name="rating11" value="1" required/>
+                <label for="rating101">1</label>
+                <input type="radio" id="rating102" name="rating11" value="2"/>
+                <label for="rating102">2</label>
+                <input type="radio" id="rating103" name="rating11" value="3"/>
+                <label for="rating103">3</label>
+                <input type="radio" id="rating104" name="rating11" value="4"/>
+                <label for="rating104">4</label>
+                <input type="radio" id="rating105" name="rating11" value="5"/>
+                <label for="rating105">5</label>
+                <input type="radio" id="rating106" name="rating11" value="6"/>
+                <label for="rating106">6</label>
+                <input type="radio" id="rating107" name="rating11" value="7"/>
+                <label for="rating107">7</label>
+                <input type="radio" id="rating108" name="rating11" value="8"/>
+                <label for="rating108">8</label>
+                <input type="radio" id="rating109" name="rating11" value="9"/>
+                <label for="rating109">9</label>
+                <input type="radio" id="rating110" name="rating11" value="10"/>
+                <label for="rating110">10</label>
+            </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoeveel heb je kunnen begrijpen van de les?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating111" name="rating12" value="1" required/>
+                <label for="rating111">1</label>
+                <input type="radio" id="rating112" name="rating12" value="2"/>
+                <label for="rating112">2</label>
+                <input type="radio" id="rating113" name="rating12" value="3"/>
+                <label for="rating113">3</label>
+                <input type="radio" id="rating114" name="rat;';';;inrating11" value="4"/>
+                <label for="rating114">4</label>
+                <input type="radio" id="rating115" name="rati32dewcsng2" value="5"/>
+                <label for="rating115">5</label>
+                <input type="radio" id="rating116" name="ratingrating11" value="6"/>
+                <label for="rating116">6</label>
+                <input type="radio" id="rating117" name="rating2,.,.,.,.rating11" value="7"/>
+                <label for="rating117">7</label>
+                <input type="radio" id="rating118" name="rating11" value="8"/>
+                <label for="rating118">8</label>
+                <input type="radio" id="rating119" name="rating11" value="9"/>
+                <label for="rating119">9</label>
+                <input type="radio" id="rating120" name="rating11" value="10"/>
+                <label for="rating120">10</label>
+            </div>
+        </div>
+
+
         <hr>
     </fieldset>
     <fieldset id="progressive-web-apps">
         <legend>Progressive web apps</legend>
         <h2>Docenten die horen bij dit vak</h2>
+
         <label>
-            <input type="checkbox" name="joost" value="">
-            Joost Faber
-        </label>
-        <label>
-            <input type="checkbox" name="robert" value="">
-            Robert Spier
-        </label>
-        <label>
-            <input type="checkbox" name="suss" value="">
-            Suus ten Voorde
-        </label>
-        <label>
-            <input type="checkbox" name="declan" value="">
+            <input type="checkbox" name="declan" value="" checked required>
             Declan Rek
         </label>
         <label>
-            <input type="checkbox" name="justus" value="">
-            Justus Sturkenboom
-        </label>
-        <label>
-            <input type="checkbox" name="guido" value="">
-            Guido Bouwman
-        </label>
-        <label>
-            <input type="checkbox" name="vasilis" value="">
-            Vasilis van Gemert
-        </label>
-        <label>
-            <input type="checkbox" name="sanne" value="">
-            Sanne ’t Hooft
-        </label>
-        <label>
-            <input type="checkbox" name="koop" value="">
-            Koop Reynders
-        </label>
-        <label>
-            <input type="checkbox" name="peter" value="">
-            Peter Paul Koch
+            <input type="checkbox" name="declan" value="" checked required>
+          Janno
         </label>
         <br>
-        <label>
-            Welke graad geef je dit vak en de vakdocent
-            <select name="position">
-                <option value="" selected></option>
-                <option value="onvoldoende">Onvoldoende</option>
-                <option value="voldoende">Voldoende</option>
-                <option value="ruimvoldoende">Ruim voldoende</option>
-            </select>
-        </label>
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, wat vond je van de lesstof?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating121" name="rating22" value="1" required/>
+                <label for="rating121">1</label>
+                <input type="radio" id="rating122" name="rating23" value="2"/>
+                <label for="rating122">2</label>
+                <input type="radio" id="rating123" name="rating24" value="3"/>
+                <label for="rating123">3</label>
+                <input type="radio" id="rating124" name="rating25" value="4"/>
+                <label for="rating124">4</label>
+                <input type="radio" id="rating125" name="rating26" value="5"/>
+                <label for="rating125">5</label>
+                <input type="radio" id="rating126" name="rating27" value="6"/>
+                <label for="rating126">6</label>
+                <input type="radio" id="rating127" name="rating28" value="7"/>
+                <label for="rating127">7</label>
+                <input type="radio" id="rating128" name="rating29" value="8"/>
+                <label for="rating128">8</label>
+                <input type="radio" id="rating129" name="rating299" value="9"/>
+                <label for="rating129">9</label>
+                <input type="radio" id="rating130" name="rating2999" value="10"/>
+                <label for="rating130">10</label>
+            </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoe gemakklijk kon je de les volgen?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating131" name="rating30" value="1" required/>
+                <label for="rating131">1</label>
+                <input type="radio" id="rating132" name="rating332" value="2"/>
+                <label for="rating132">2</label>
+                <input type="radio" id="rating133" name="rating322" value="3"/>
+                <label for="rating133">3</label>
+                <input type="radio" id="rating134" name="rating312" value="4"/>
+                <label for="rating134">4</label>
+                <input type="radio" id="rating135" name="rating31232" value="5"/>
+                <label for="rating135">5</label>
+                <input type="radio" id="rating136" name="rating123212" value="6"/>
+                <label for="rating136">6</label>
+                <input type="radio" id="rating137" name="rating2123123" value="7"/>
+                <label for="rating137">7</label>
+                <input type="radio" id="rating138" name="rating2121232133123" value="8"/>
+                <label for="rating138">8</label>
+                <input type="radio" id="rating139" name="rating2123123" value="9"/>
+                <label for="rating139">9</label>
+                <input type="radio" id="rating140" name="rating2141242142" value="10"/>
+                <label for="rating140">10</label>
+            </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoeveel heb je kunnen begrijpen van de les?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating141" name="rating299" value="1" required/>
+                <label for="rating141">1</label>
+                <input type="radio" id="rating142" name="rating962" value="2"/>
+                <label for="rating142">2</label>
+                <input type="radio" id="rating143" name="rating952" value="3"/>
+                <label for="rating143">3</label>
+                <input type="radio" id="rating144" name="rating932" value="4"/>
+                <label for="rating144">4</label>
+                <input type="radio" id="rating145" name="rating243" value="5"/>
+                <label for="rating145">5</label>
+                <input type="radio" id="rating146" name="rating26346436856hfgh" value="6"/>
+                <label for="rating146">6</label>
+                <input type="radio" id="rating147" name="ratingzxazxazxa2" value="7"/>
+                <label for="rating147">7</label>
+                <input type="radio" id="rating148" name="ratinaaxazxsdasdg2" value="8"/>
+                <label for="rating148">8</label>
+                <input type="radio" id="rating149" name="ratiasdad123213ng2" value="9"/>
+                <label for="rating149">9</label>
+                <input type="radio" id="rating150" name="rating2123123saxz" value="10"/>
+                <label for="rating150">10</label>
+            </div>
+        </div>
         <hr>
     </fieldset>
     <fieldset id="browser-technologies">
         <legend>Browser technologies</legend>
         <h2>Docenten die horen bij dit vak</h2>
         <label>
-            <input type="checkbox" name="joost" value="">
-            Joost Faber
-        </label>
-        <label>
-            <input type="checkbox" name="robert" value="">
-            Robert Spier
-        </label>
-        <label>
-            <input type="checkbox" name="suss" value="">
-            Suus ten Voorde
-        </label>
-        <label>
-            <input type="checkbox" name="declan" value="">
-            Declan Rek
-        </label>
-        <label>
-            <input type="checkbox" name="justus" value="">
-            Justus Sturkenboom
-        </label>
-        <label>
-            <input type="checkbox" name="guido" value="">
-            Guido Bouwman
-        </label>
-        <label>
-            <input type="checkbox" name="vasilis" value="">
+            <input type="checkbox" name="declan" value="" checked required>
             Vasilis van Gemert
         </label>
         <label>
-            <input type="checkbox" name="sanne" value="">
-            Sanne ’t Hooft
-        </label>
-        <label>
-            <input type="checkbox" name="koop" value="">
-            Koop Reynders
-        </label>
-        <label>
-            <input type="checkbox" name="peter" value="">
-            Peter Paul Koch
+            <input type="checkbox" name="declan" value="" checked required>
+            Paul
         </label>
         <br>
-        <label>
-            Welke graad geef je dit vak en de vakdocent
-            <select name="position">
-                <option value="" selected></option>
-                <option value="onvoldoende">Onvoldoende</option>
-                <option value="voldoende">Voldoende</option>
-                <option value="ruimvoldoende">Ruim voldoende</option>
-            </select>
-        </label>
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, wat vond je van de lesstof?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating151" name="rating2asdfghjukytrefsd" value="1" required/>
+                <label for="rating151">1</label>
+                <input type="radio" id="rating152" name="ratingwdasfgt5432wqdascdfr543w2" value="2"/>
+                <label for="rating152">2</label>
+                <input type="radio" id="rating153" name="ratiner432wdscdfrgt5444g2" value="3"/>
+                <label for="rating153">3</label>
+                <input type="radio" id="rating154" name="rating234wesdgdsg2342" value="4"/>
+                <label for="rating154">4</label>
+                <input type="radio" id="rating155" name="rating2ewfrt543r" value="5"/>
+                <label for="rating155">5</label>
+                <input type="radio" id="rating156" name="rating223rewstr65432" value="6"/>
+                <label for="rating156">6</label>
+                <input type="radio" id="rating157" name="ratin7453542134564gredfvcsg2" value="7"/>
+                <label for="rating157">7</label>
+                <input type="radio" id="rating158" name="ratinasdgt5432wqdasdg2" value="8"/>
+                <label for="rating158">8</label>
+                <input type="radio" id="rating159" name="ratifsafdfrt4r3wsng2" value="9"/>
+                <label for="rating159">9</label>
+                <input type="radio" id="rating160" name="ratsafreg54r3wsing2" value="10"/>
+                <label for="rating160">10</label>
+            </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoe gemakklijk kon je de les volgen?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating161" name="ratiwdefrtyutre3wqng2" value="1" required/>
+                <label for="rating161">1</label>
+                <input type="radio" id="rating162" name="rat2345tgfdsqrting2" value="2"/>
+                <label for="rating162">2</label>
+                <input type="radio" id="rating163" name="ratertyuiop;[';olikujhing2" value="3"/>
+                <label for="rating163">3</label>
+                <input type="radio" id="rating164" name="ratirfgtyuiolp;[;olikujyhtgng2" value="4"/>
+                <label for="rating164">4</label>
+                <input type="radio" id="rating165" name="ratinwdsfgty654edsfg2" value="5"/>
+                <label for="rating165">5</label>
+                <input type="radio" id="rating166" name="rat123123123213ing2" value="6"/>
+                <label for="rating166">6</label>
+                <input type="radio" id="rating167" name="ratasdsadasdsaing2" value="7"/>
+                <label for="rating167">7</label>
+                <input type="radio" id="rating168" name="ratinasdasdsadasdasdg2" value="8"/>
+                <label for="rating168">8</label>
+                <input type="radio" id="rating169" name="ratinasddasd213123asdasdasdasg2" value="9"/>
+                <label for="rating169">9</label>
+                <input type="radio" id="rating170" name="ratindaszxzczxczxczxczxczg2" value="10"/>
+                <label for="rating170">10</label>
+            </div>
+        </div>
+
+        <div class="survey-answer">
+            <p>Op een schaal van 1 tot 10, hoeveel heb je kunnen begrijpen van de les?</p>
+            <div class="survey-rating">
+                <input type="radio" id="rating171" name="rating2123qwasdfgtr43eqwe" value="1" required/>
+                <label for="rating171">1</label>
+                <input type="radio" id="rating172" name="ratingr54643ewrt67890polikujhyt2" value="2"/>
+                <label for="rating172">2</label>
+                <input type="radio" id="rating173" name="ratiyhtgrfedw34r5thgbfvdcewsqng2" value="3"/>
+                <label for="rating173">3</label>
+                <input type="radio" id="rating174" name="ratinsadfgty543qwaxdvasxaxg2" value="4"/>
+                <label for="rating174">4</label>
+                <input type="radio" id="rating175" name="ratiq132ewrfghtjuyfdmaking2" value="5"/>
+                <label for="rating175">5</label>
+                <input type="radio" id="rating176" name="ratinasrreatg2" value="6"/>
+                <label for="rating176">6</label>
+                <input type="radio" id="rating177" name="ratinrenatog2" value="7"/>
+                <label for="rating177">7</label>
+                <input type="radio" id="rating178" name="ratinmakixag2" value="8"/>
+                <label for="rating178">8</label>
+                <input type="radio" id="rating179" name="ratixayahng2" value="9"/>
+                <label for="rating179">9</label>
+                <input type="radio" id="rating180" name="raticatilynng2" value="10"/>
+                <label for="rating180">10</label>
+            </div>
+        </div>
         <hr>
     </fieldset>
 
+    <fieldset>
+        <label>
+            Extra opmerking over de enquete of vragen (niet verplicht)
+            <textarea name="comments"></textarea>
+        </label>
+    </fieldset>
     <br>
 
-    <label>
-        Extra opmerking over de enquete of vragen (niet verplicht)
-        <textarea name="comments"></textarea>
-    </label>
 
-    <button type="submit">Submit</button>
 
     <button type="button" id="prev-btn">Vorige</button>
     <button type="button" id="next-btn">Volgende</button>
+    <button type="submit">Submit</button>
+
 </form>
 <script src="index.js"></script>
 </body>

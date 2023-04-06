@@ -1,123 +1,67 @@
-# Browser Technologies @cmda-minor-web 2022 - 2023
+# Browser Technologies - De eindopdracht - Enquete over de minor Web Development
 
-_Robuuste, toegankelijke websites ontwerpen en maken …_
+> Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Ik wil duidelijk zien waar ik ben en hoeveel ik nog te doen heb. Ik wil eerder ingevulde vragen kunnen herzien. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
 
-Één van de mooiste [principes](https://www.w3.org/DesignIssues/Principles.html) van het web is dat iedereen met een computer en een browser het web kan gebruik. [Het web is voor iedereen](https://www.youtube.com/watch?v=UMNFehJIi0E). Het is geen gecontroleerde (programmeer) omgeving, je kan er gerust van uit gaan dat niemand precies hetzelfde te zien krijgt als wat jij in je browser ziet. Er zijn technische beperkingen, zoals afmetingen van de browser, grootte van het apparaat, manier van interactie, kwaliteit van de hardware, kwaliteit van het netwerk en er zijn mensen, allemaal verschillende mensen ...
+## Vereisten voor de Enquete
 
-In het vak Browser Technologies gaan we onderzoeken wat Progressive Enhancement is en hoe je dit kan toepassen om goede, robuuste, toegankelijke websites te maken. Voor iedereen. Het web is voor iedereen, in dit vak leer je hoe je daarvoor kan zorgen.
-
-## Opdrachten
-
-het vak bestaat uit 2 opdrachten. We werken eerst even aan opdracht 1. Op dag twee beginnen we te werken aan de eindopdracht.
-
-### Wat is Progressive-enhancement en hoe werkt het?
-
-Voor de eerste opdracht gaan we onderzoeken wat Progressive Enhancement is.
-
-- [Opdracht 1 - NPM install Progressive Enhancement](assignments/opdracht-1.md)
-
-
-### Eindopdracht ✨ Progressively Enhanced Browser Technology
-
-Voor de eindopdracht ontwerp en maak je een interactieve toepassing volgens het principe van Progressive Enhancement. Zorg dat alle gebruikers, met alle browsers, in iedere context de toepassing zo goed mogelijk te zien, horen en/of voelen krijgen. De meest 'enhanced' versie is 'delightful UX', mooi en prettig om te gebruiken.
-
-- [De eindopdracht - Progressive Enhanced Browser Technologie](assignments/eindopdracht.md)
+- Studentgegevens (naam + nummer) verplicht
+- Per vak
+    - naam
+    - docent(en)
+    - weken waarin je het vak deed
+    - beoordeling op schaal 1-10 van
+    - lesstof (hoe moeilijk is het)
+    - uitleg (hoe duidelijk is het uitgelegd)
+    - eigen inzicht (hoe goed snap je het)
+    - Zorg ervoor dat de gebruiker niet teveel formuliervelden in 1 keer ziet.
 
 
-### Leerdoelen
-- _je leert wat Progressive enhancement is en hoe je dit kan toepassen._
-- _je leert Browser Technologies te onderzoeken, testen en implementeren als enhancement._
-- _je leert hoe je Feature Detection doet en wat je kan doen als een 'feature' niet werkt of wordt ondersteund._
+- Validatie: Zorg ervoor dat het formulier compleet wordt ingevuld. Geef duidelijke foutmeldingen. Bedenk zelf wanneer en hoe de validatie zal plaatsvinden.
+- Als ik de enquete niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.
+- Duidelijke interface waarmee gebruiker terug kan naar vorige vragen. (En misschien ook om een vraag over te slaan?)
+- Duidelijke interface die aangeeft waar je bent in het formulier
+- Je mag geen zichtbare radio buttons gebruiken
+- Het formulier moet een light mode en dark mode hebben.
 
-[Rubric](https://icthva.sharepoint.com/:x:/s/FDMCI_EDU_CMD_Minor_Web_Design__Development/ET8k_fDG3VVPvqMkqx2uCusBR5-yeGaKo01meb9bDorLuQ?e=0hbmOk)
+# Browser Technologies - De eindopdracht ✨ <em lang="en">Progressively Enhanced Browser Technology</em>
 
-## Planning & programma
+Voor deze opdracht ga je een interactieve toepassing ontwerpen. Zorg dat alle gebruikers, met alle browsers, in iedere context minimaal de core functionaliteit te zien, horen en/of voelen krijgen.
 
-| Planning  | Woensdag  |  Donderdag | Vrijdag  |
-|---|---|---|---|
-| [Week 1](#week-1)  | Intro, College + briefing opdracht 1 | Presentaties opdracht 1, briefing eindopdracht, college | Voortgangsgesprekken |
-| [Week 2](#week-2)  | College + Briefing De eindopdracht  | College + werken aan de opdracht | Feedbackgesprekken  |
-| [Week 3](#week-3)  | Beoordelingen!  |
+## Doel van deze opdracht
 
-### Week 1
+Het doel van deze opdracht is te leren hoe je een online interactieve toepassing kan maken met behulp van _Progressive Enhancement_ en _Feature Detection_ zodat die het altijd doet ...
 
-Het web is voor iedereen: Deze week gaan we onderzoeken wat Progressive Enhancement is en kennismaken met testen en het device lab.
-
-#### Woensdag 22 maart
-
-Browser Technolgies begint op woensdag. In het eerste college krijg je uitleg over het programma en over het nut van Progressive Enancement. Wat is dat eigenlijk? De meeste CMD studenten hebben dit waarschijnlijk al eens gehoord en misschien iets mee gedaan in blok Tech. Progressive Enhancement, oftewel PE, is een manier hoe je je de code van een website kan bouwen zodat alle gebruikers met alle browsers je website zo goed mogelijk te zien krijgen. Met PE kun je robuuste websites bouwen die het altijd doen. PE is een manier van denken.
-
-| Woensdag 22/3 | Wat  |
-|---|---|
-| 9:30 | College les 1 over het vak, wie, wat, waar en waarom |
-|  | [Briefing Opdracht 1 🛹 NPM install Progressive-Enhancement](assignments/opdracht-1.md) |
-| 16:00 | Weekly Nerd |
-
-##### Lezen voor les 1 📖
-
-- [Everyone has JavaScript, right? by Stuart Langridge](https://kryogenix.org/code/browser/everyonehasjs.html)
+[Rubric](https://docs.google.com/spreadsheets/d/1MV3BWwwg_Zz1n-S_qOM4iSm4gA4M6g0xAxGacyaPuac/)
 
 
-#### Donderdag 23 maart
+### Browsers
 
-Donderdag gaan we opdracht 1 bekijken en bespreken. Als het goed is heb je een beeld gevormd van Progressive Enhancement. Tijdens de les duiken we hier met zijn allen dieper op in, gebaseerd op de resultaten van jullie onderzoek.
 
-Zorg dat je de bevindingen van je onderzoek online kan presenteren. We gaan de hele feature lijst doorlopen en alle studenten kunnen laten zien wat ze hebben onderzocht, met voorbeelden, de problemen, cijfers en/of meningen. Bedenk ook hoe je de problemen zou kunnen oplossen.
+### Bronnen
 
-Daarna krijg je uitleg over opdracht 2. Voor deze opdracht ga je proberen het web te laten 'breken' door (browser) features bewust uit te zetten. Wat gebeurt er als images, custom fonts, JavaScript, kleur, breedband internet niet optimaal werken?
+Afbeeldingen, Custom fonts, Kleur, Muis/Trackpad, Breedband internet, Javascript, Cookies, LocalStorage.
 
-| Donderdag 23/3 | Wat  |
-|---|---|
-| 9:30 | Opdracht 1 bespreken 🛹 |
-| 10:30 | [Briefing eindopdracht](assignments/eindopdracht.md) |
-| 15:30 | College les 2 over de UX van HTML |
-| 16:00 | Checkout per team |
 
-Lezen voor les 2 📖
+## Criteria
 
-- [The unreasonable effectiveness of simple HTML by Terence Eden](https://shkspr.mobi/blog/2021/01/the-unreasonable-effectiveness-of-simple-html/)
+- [ ]	Student kan de _Core functionaliteit_ van een use case doorgronden
+- [ ]	Student kan uitleggen wat _Progressive Enhancement_ en _Feature Detection_ is en hoe dit toe te passen in Web Development
+- [ ]	De demo is opgebouwd in 3 lagen, volgens het principe van _Progressive Enhancement_
+- [ ]	De user experience van de demo is goed
+  -	Let op leesbaarheidsregels, contrast en kleuren
+  -	Let op gebruiksvriendelijkheid, zoals affordance en feedback op interactieve elementen
+  -	De meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
 
-#### Vrijdag 25 maart
+Er is een Readme toegevoegd met daarin:
+- [ ] Een link naar de demo.
+- [ ] Een beschrijving van de feature(s)/Browser Technologies die in je demo zijn gebruikt en hoe je dit PE hebt toegepast
+- [ ] Een lijst met browsers waarin je hebt getest:
+    - voor de desktop: 1 Chromium, Firefox en Safari
+    - voor mobiel: Safari iOS + Android: Samsung Internet of Chrome
+    - 1 obscure browser naar keuze: Lynx, Flow ([Flow voor Mac](https://flounder.ekioh.com/~piers/ekioh_6.9.0_mac-flow_20230307_r38512.zip) en [Flow voor Linux](https://flounder.ekioh.com/~piers/ekioh_6.9.0_x11-64-flow_20230307_r38512.zip)), PrinceXML of KaiOS
+- [ ]  een testverslag met
+    - een beschrijving van de feature-lijst die zijn onderzocht
+    - welke browsers de feature(s) wel/niet ondersteunen
+    - welke functionaliteiten zoals JavaScript je aan en uit hebt gezet in de tests
+    - een screenreader test op de default screenreader van je laptop en/of telefoon.
 
-Vrijdag is het eerste voortgangsgesprek. Je bespreekt met de docent je keuze voor de eindopdracht. Er is alle tijd voor vragen, natuurlijk.
-
-| Vrijdag 25/3 | Wat  |
-|---|---|
-| 9:30 | Voortgangsgesprekken |
-| 16:00 | Work Hard Play Hard |
-
-### Week 2
-
-In week 2 ga je verder met de eindopdracht. We hebben in week 1 onderzocht wat PE is en welke feautures wel of niet goed worden ondersteund. Deze week gaan we leren hoe je een interactieve toepassing in 3 lagen kan ontwerpen en wat je kan doen als een browser een 'enhancement' niet kan tonen.
-
-#### Woensdag 29 maart
-
-Woensdag krijg je een college over browsers, en alles (!) wat daarbij hoort. Daarna gaan we aan de slag: als je een interactieve toepassing ontwerpt die alle gebruikers, met alle browsers moeten kunnen zien, dan zul je moeten bedenken hoe je de toepassing in 3 lagen kan opbouwen, eerst bepaal je de core functionaliteit en de user-delight ... schetsen maar!
-
-| Woensdag 29/3 | Wat  |
-|---|---|
-| 9:30 | College van PPK over browsers! |
-| 16:00 | Checkout per team |
-
-#### Donderdag 30 maart
-
-Donderdag eindigt de les laat! Onze gastspreker kan pas om 18:00. Je kan de hele dag verder werken aan je eindopdracht.
-
-| Donderdag 30/3 | Wat  |
-|---|---|
-| 9:30 | Aan de slag |
-| 11:30 | Uitleg beoordelingen |
-| 18:00 | Gastcollege Aaron Gustafson |
-
-Lezen voor les 4 📖
-
-- [Be progressive by Jeremy Keith](https://adactio.com/journal/7706)
-
-#### Vrijdag 31 maart
-
-Vrijdag bespreken we in groepjes de vorderingen voor de eindopdracht. Zorg dat je vandaag weet welke browsers (en devices) jij gaat testen.
-
-| Vrijdag 31/3 | Wat  |
-|---|---|
-| 9:30 | Vorderingen bespreken & feedback in groepjes |
-| 16:00 | Work Hard Play Hard |
